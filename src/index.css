@@ -1,4 +1,5 @@
 body {
+  background-color:grey;
   margin: 0;
   font-family:
     -apple-system,
@@ -24,4 +25,29 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  border-radius: 10px;
+  border-color: green;
+}
+
+.row{
+  content: "";
+  display: table;
+  clear: both;
+  padding: 40px 20px 20px 20px;
+}
+
+button{
+  padding: 0.75rem 1rem;
+  font-size: 1.75rem;
+  background-color: green;
+  text-align: center;
+}
+
+div{
+  padding-top: 10px;
 }

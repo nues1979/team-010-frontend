@@ -1,6 +1,8 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Img202005081028339431588930175915Jpg from './containers/Img202005081028339431588930175915Jpg';
 
 function App() {
   return (
@@ -15,5 +17,13 @@ function App() {
     </div>
   );
 }
+
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact component={Img202005081028339431588930175915Jpg} />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
