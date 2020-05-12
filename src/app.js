@@ -1,29 +1,28 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import Img202005081028339431588930175915Jpg from './containers/Img202005081028339431588930175915Jpg';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
+import Homepage from "./pages/homepage/homepage.component";
+import Header from "./components/header/header.component";
 
-function App() {
+class App extends React.Component {
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+   
+  }
+  componentWillUnmount(){
+    
+  }
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Rooting for Team-010!</p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Homepage} /> 
+      </Switch>
     </div>
   );
+  }
 }
-
-const App = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact component={Img202005081028339431588930175915Jpg} />
-    </Switch>
-  </BrowserRouter>
-);
 
 export default App;
