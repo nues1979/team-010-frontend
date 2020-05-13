@@ -3,8 +3,8 @@ import React from 'react'
 import './button.styles.scss'
 
 
- const CustomButton = () => (
-    <button  className="">
+ const CustomButton = ({ children, ...props }) => (
+    <button  className="button" style={props.style}>
         
     </button>
 );
