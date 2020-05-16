@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Button from '../../components/button';
-// import Card from '../../components/Card';
+import Button from '../../components/Button';
 import Image from '../../components/Image';
 import Main from '../../components/Main';
 import Paragraph from '../../components/Paragraph';
