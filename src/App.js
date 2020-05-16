@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-import containers from './containers';
+import market from './pages/market';
 
 const App = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact component={containers} />
+      <Route path="/market" exact component={market} />
     </Switch>
   </BrowserRouter>
 );
