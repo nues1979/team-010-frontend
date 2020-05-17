@@ -1,7 +1,7 @@
 barebones setup for JavaScript / Node projects replace this with a one-liner phrase describing this project or app
 
 [![Coverage Status](https://coveralls.io/repos/github/BuildForSDG/team-010-frontend/badge.svg?branch=develop)](https://coveralls.io/github/BuildForSDG/team-010-frontend?branch=develop) [![Build Status](https://travis-ci.com/BuildForSDG/team-010-frontend.svg?branch=develop)](https://travis-ci.com/BuildForSDG/team-010-frontend) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0886bed1ea354454a903bc5ef24f6a62)](https://app.codacy.com/gh/BuildForSDG/Team-010-Frontend?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDG/Team-010-Frontend&utm_campaign=Badge_Grade_Settings)
-[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
 ## About
 

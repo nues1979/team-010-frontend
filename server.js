@@ -4,11 +4,11 @@ const path = require('path');
 // Create global app object
 const app = express();
 
-app.use(express.static('./build'));
+app.use(express.static('./public'));
 
 // Landing page
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve('./build/index.html'));
+  res.sendFile(path.resolve('./public/index.html'));
 });
 
 const port = process.env.PORT || 5000;

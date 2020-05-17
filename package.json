@@ -26,7 +26,7 @@
     "test:cover": "npm run coverage && npm run coveralls",
     "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\"",
     "check-styles": "npx stylelint '**/*.css'",
-    "serve": "npm run build && node ./server.js"
+    "serve": "node ./server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
