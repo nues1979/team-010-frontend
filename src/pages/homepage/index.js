@@ -4,7 +4,6 @@ import Button from '../../components/Button';
 import Card from '../../components/Card';
 import Icon from '../../components/Icon';
 import Image from '../../components/Image';
-import InputField from '../../components/InputField';
 import Main from '../../components/Main';
 import Paragraph from '../../components/Paragraph';
 import Link from '../../components/Link';
