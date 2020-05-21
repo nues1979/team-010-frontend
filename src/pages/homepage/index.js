@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '../../components/Button';
+import Button from '../../components/button';
 import Card from '../../components/Card';
 import Icon from '../../components/Icon';
 import Image from '../../components/Image';
