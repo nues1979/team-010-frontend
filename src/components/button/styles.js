@@ -1,4 +1,4 @@
-import Styled from 'styled-components';
+import Styled from "styled-components";
 
 export const Button = Styled.button`
   margin: 10px;
@@ -11,5 +11,5 @@ export const Button = Styled.button`
   padding: 10px 40px 10px 40px;
   border-radius: 10px;
   border: 1px solid rgba(3, 3, 3, 1);
-  background-color: green;
+  background-color: rgba(95, 173, 86, 1);
 `;
