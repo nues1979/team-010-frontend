@@ -7,6 +7,9 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "node-sass": "^4.14.1",
+    "coveralls": "^3.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -16,11 +19,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --collectCoverageFrom='[\"src/**/*.{js,jsx}\", \"!**/*index.js\", \"!src/serviceWorker.js\", \"!src/components/header/**\", \"!src/components/form-input/**\", \"!src/pages/homepage/**\", \"!src/components/Radio/**\"]' --watchAll=false --env=jsdom --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "eject": "react-scripts eject",
-    "test:cover": "jest --coverage",
-    "lint": "eslint \"src/**/*.js\"",
-    "check-styles": "npx stylelint '**/*.css'"
+    "test:cover": "npm run coverage && npm run coveralls",
+    "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\"",
+    "check-styles": "npx stylelint '**/*.css'",
+    "serve": "npm run build && node ./server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,5 +51,18 @@
     "prettier": "^2.0.5",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "nyc": {
+    "_comment": "Purpose of this part: to do code coverage within Mocha/Chai using Istanbul",
+    "register": "babel-register",
+    "include": [
+      "**/*.js",
+      "./*.js"
+    ],
+    "exclude": [
+      "**/src/serviceWorker.js**",
+      "**/src/index.js**"
+    ],
+    "all": true
   }
 }
