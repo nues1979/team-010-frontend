@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Paragraph from '../Paragraph';
 import Row from '../Row';
-import { Link } from 'react-router-dom';
 import Stack from '../Stack';
 
 import { Footer } from './styles';
@@ -29,7 +29,7 @@ export default ({ children, ...props }) => (
           <Paragraph>Join Us as a Logistic Partner</Paragraph>
         </Link>
       </Stack>
-        <Stack>
+      <Stack>
         <Link to="/policy">
           <Paragraph>Terms and conditions</Paragraph>
         </Link>
